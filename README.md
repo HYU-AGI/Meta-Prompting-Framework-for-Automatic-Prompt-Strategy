@@ -1,1 +1,2 @@
 # Meta-Prompting-Framework-for-Automatic-Prompt-Strategy
+입력프롬프트를최적으로처리하기위한프롬프트라이브러리를운용을AI가결정하는메타프롬프팅기법
