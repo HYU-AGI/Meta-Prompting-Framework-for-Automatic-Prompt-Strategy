@@ -11,10 +11,10 @@ pip install -r requirements.txt
 ```
 
 ## 💻 Usage Guide
-### 1. dataset 준비
+### 1. Dataset 준비
 - 자세한 내용은 [README.md](data/README.md)를 참고해주세요.
 
-### 2. meta-prompt 생성
+### 2. Meta-prompt 생성
 ```
 python src/main.py --model_name "model_name" --dataset_name "dataset_name" --delta_gain_coef 0.07 --alpha_neg_cap 1.0
 ```
