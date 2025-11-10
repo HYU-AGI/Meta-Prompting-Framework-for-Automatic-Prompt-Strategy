@@ -10,7 +10,7 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
-## 💻 실행 방법
+## 💻 Usage Guide
 ### 1. dataset 준비
 - 자세한 내용은 [README.md](data/README.md)를 참고해주세요.
 
