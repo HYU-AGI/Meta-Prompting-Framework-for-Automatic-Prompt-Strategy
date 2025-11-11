@@ -1,0 +1,16 @@
+accelerate==0.29.3
+huggingface-hub==0.25.0
+matplotlib
+numpy==1.26.4
+regex==2024.11.6
+scikit-learn==1.6.1
+scipy==1.15.3
+tokenize_rt==6.1.0
+tokenizers==0.20.3
+sympy==1.13.1
+urllib3==2.3.0
+torch==2.5.1
+transformers==4.45.0
+sentencepiece
+pandas
+rtdl_num_embeddings
