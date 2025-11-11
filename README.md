@@ -18,9 +18,10 @@ pip install -r requirements.txt
 ```
 python src/main.py --model_name "model_name" --dataset_name "dataset_name" --delta_gain_coef 0.07 --alpha_neg_cap 1.0
 ```
-meta-prompt는 다음과 같은 연산을 거쳐 생성됩니다:
-- Step 1: Self-Perplexity 계산
-- Step 2: prompt module 선택 -> 선택된 module을 input prompt에 맞게 adaption -> adapted module을 사용해 reasoning 과정을 단계적으로 생성하여 meta-prompt 생성 완료
+meta-prompt는 다음 과정을 통해 생성됩니다: \
+- Step 1: Self-Perplexity(SPP) 계산
+- Step 2: Prompt module 선택 및 적응
+   - 선택된 모듈을 입력 prompt에 맞게 적응(adaptation)시킨 뒤, reasoning 과정을 단계적으로 구성하여 최종 meta-prompt를 생성합니다.
 
 ## 🧠 작동 원리
 **1️⃣ Self-Perplexity(SPP) 값 측정** \
