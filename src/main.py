@@ -25,6 +25,20 @@ class ModelWrapper:
         self.args = args
         self.model_name = self.args.model_name
         self.model, self.tokenizer = load_model(self.args)
+    
+    def generate_response(self, messages, forced_prefix=None):
+        from models import generate_local_response, Args as GenArgs
+        gen_args = GenArgs(
+            model_name=self.args.model_name,
+            model_id=self.args.model_id,
+            cache_dir=self.args.cache_dir,
+            max_new_tokens=self.args.max_new_tokens,
+            do_sample=self.args.do_sample,
+            top_p=self.args.top_p,
+            top_k=self.args.top_k,
+            temperature=self.args.temperature
+        )
+        return generate_local_response(self.model, self.tokenizer, messages, gen_args, forced_prefix)
 
 
 model_version = {
@@ -110,7 +124,6 @@ def main():
             "id": data['id'],
             "question": data['question'],
             "answer": data.get('answer'),
-            "method": args.method,
             "selected_modules": runner.selected_modules,
             "using_rag": runner.using_rag,
             "adapted_modules": runner.adapted_modules,
