@@ -13,4 +13,3 @@ torch==2.5.1
 transformers==4.45.0
 sentencepiece
 pandas
-rtdl_num_embeddings
