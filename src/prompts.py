@@ -1,4 +1,4 @@
-reasoning_modules = (
+reasoning_modules = [
 "Check if retrieval from external sources is needed to answer the question.",
 "How could I devise an experiment to help solve that problem?",
 "Make a list of ideas for solving this problem, and apply them one by one to the problem to see if any progress can be made.",
@@ -39,7 +39,7 @@ reasoning_modules = (
 "Ignoring the current best solution, create an entirely new solution to the problem.",
 "Let’s think step by step.",
 "Let’s make a step by step plan and implement it with good notion and explanation.",
-)
+]
 
 
 select_prompt = """
