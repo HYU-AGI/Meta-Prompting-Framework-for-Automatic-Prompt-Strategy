@@ -128,14 +128,6 @@ def main():
             "using_rag": runner.using_rag,
             "adapted_modules": runner.adapted_modules,
             "reasoning_structure": runner.reasoning_structure,
-            "spp_nll": runner.spp_nll,
-            "spp_ppl": runner.spp_ppl,
-            "alpha": runner.alpha,
-            "used_scaled_embed": runner.used_scaled_embed,
-            "m1_found": runner.m1_found,
-            "m1_span_len": runner.m1_span_len,
-            "scaled_tokens": runner.scaled_tokens,
-            "marker_eff_gain": runner.marker_eff_gain,
             "delta_eff_gain": runner.delta_eff_gain,
         }
         res.append(tmp)
@@ -151,3 +143,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
